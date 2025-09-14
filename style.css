@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px #00f, 0 0 50px #0ff, 0 0 75px #0f0, 0 0 100px #ff0;
+  animation: glow 5s linear infinite;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 20px 0 10px;
+  color: #00f;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0f0, 0 0 40px #ff0;
+  animation: glow 5s linear infinite;
+}
+
+.about {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #0ff;
+  text-shadow: 0 0 10px #00f, 0 0 20px #0f0, 0 0 40px #ff0;
+  animation: glow 5s linear infinite;
+}
+
+.socials {
+  margin: 20px 0;
+}
+
+.socials a {
+  margin: 0 15px;
+  font-size: 2rem;
+  color: #0ff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-shadow: 0 0 10px #00f, 0 0 20px #0f0, 0 0 40px #ff0;
+  animation: glow 5s linear infinite;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 5px #00f) drop-shadow(0 0 10px #0ff);
+  }
+  25% {
+    filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 15px #0f0);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 15px #ff0);
+  }
+  75% {
+    filter: drop-shadow(0 0 5px #ff0) drop-shadow(0 0 15px #0ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #00f) drop-shadow(0 0 10px #0ff);
+  }
+}
